@@ -2,6 +2,7 @@ import { Text, View, ScrollView } from 'react-native';
 import Header from '../components/header';
 
 import Constants from 'expo-constants';
+import { Banner } from '../components/banner';
 const AlturaDaBarraDeStatus = Constants.statusBarHeight;
 
 export default function Index() {
@@ -16,6 +17,7 @@ export default function Index() {
         style={{ marginTop: AlturaDaBarraDeStatus + 8 }}
       >
         <Header />
+        <Banner />
       </View>
     </ScrollView>
   );
