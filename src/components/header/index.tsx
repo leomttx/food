@@ -1,7 +1,7 @@
 import { View, Pressable, Text } from 'react-native';
 import { Ionicons, Feather } from '@expo/vector-icons'; // Importando os ícones
 
-export default function Header() {
+export function Header() {
   return (
     <View className=" w-full items-center justify-between flex flex-row">
       <Pressable className="w-10 h-10 bg-white rounded-full flex justify-center items-center">
