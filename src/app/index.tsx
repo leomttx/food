@@ -4,6 +4,7 @@ import { Banner } from '../components/banner';
 import { Search } from '../components/search';
 import Constants from 'expo-constants';
 import { Section } from '../components/section';
+import { TrendingFood } from '../components/trending';
 
 const AlturaDaBarraDeStatus = Constants.statusBarHeight;
 
@@ -29,6 +30,7 @@ export default function Index() {
         size="text-2xl"
         action={() => console.log('Clicou em Ver tudo')}
       />
+      <TrendingFood />
     </ScrollView>
   );
 }
