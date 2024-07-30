@@ -3,6 +3,7 @@ import { Header } from '../components/header';
 import { Banner } from '../components/banner';
 import { Search } from '../components/search';
 import Constants from 'expo-constants';
+import { Section } from '../components/section';
 
 const AlturaDaBarraDeStatus = Constants.statusBarHeight;
 
@@ -21,6 +22,13 @@ export default function Index() {
         <Banner />
         <Search />
       </View>
+
+      <Section
+        name="Comidas em Alta"
+        label="Ver tudo"
+        size="text-2xl"
+        action={() => console.log('Clicou em Ver tudo')}
+      />
     </ScrollView>
   );
 }
